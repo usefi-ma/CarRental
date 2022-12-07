@@ -5,11 +5,6 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{31B8F7C7-BF44-42D9-8118-CE8B4005B74D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{75E42F35-DBF9-4F02-9F91-6F5F9BCDAA04}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\CarRental-2022-06-12-Mahya.zip = ..\..\..\CarRental-2022-06-12-Mahya.zip
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
