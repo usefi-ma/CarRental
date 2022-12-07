@@ -197,16 +197,16 @@ namespace CarRental
         private void SearchData()
         {
             string queryString = "Select * FROM VehicleType";
-            DataTable vehicle = dbManager.SelectData(queryString);
-            dataGridViewMain.DataSource = vehicle;
+            DataTable dtData = dbManager.SelectData(queryString);
+            dataGridViewMain.DataSource = dtData;
         }
         private void SearchData(string typeName)
         {
             if (typeName != String.Empty)
             {
                 string queryString = "Select * FROM VehicleType where TypeName Like'%" + typeName + "%'";
-                DataTable vehicle = dbManager.SelectData(queryString);
-                dataGridViewMain.DataSource = vehicle;
+                DataTable dtData = dbManager.SelectData(queryString);
+                dataGridViewMain.DataSource = dtData;
             }
             else
             {

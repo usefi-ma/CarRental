@@ -54,12 +54,12 @@
             // 
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMain.Location = new System.Drawing.Point(16, 165);
-            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewMain.Name = "dataGridViewMain";
             this.dataGridViewMain.RowHeadersWidth = 51;
             this.dataGridViewMain.Size = new System.Drawing.Size(800, 347);
             this.dataGridViewMain.TabIndex = 5;
-            this.dataGridViewMain.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMain_CellContentClick);
+            this.dataGridViewMain.CurrentCellChanged += new System.EventHandler(this.dataGridViewMain_CurrentCellChanged);
             // 
             // statusStrip1
             // 
@@ -100,9 +100,9 @@
             this.groupBoxMain.Controls.Add(this.comboBoxUser);
             this.groupBoxMain.Controls.Add(this.lblUser);
             this.groupBoxMain.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMain.Name = "groupBoxMain";
-            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxMain.Size = new System.Drawing.Size(800, 143);
             this.groupBoxMain.TabIndex = 3;
             this.groupBoxMain.TabStop = false;
@@ -111,7 +111,7 @@
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(525, 102);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 44;
@@ -122,7 +122,7 @@
             // btnSearch
             // 
             this.btnSearch.Location = new System.Drawing.Point(633, 102);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 9;
@@ -133,7 +133,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(281, 102);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 8;
@@ -144,7 +144,7 @@
             // btnEdit
             // 
             this.btnEdit.Location = new System.Drawing.Point(173, 102);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 7;
@@ -155,7 +155,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(65, 102);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 6;
@@ -171,7 +171,7 @@
             "Administrator",
             "Employee"});
             this.comboBoxRole.Location = new System.Drawing.Point(515, 55);
-            this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxRole.Name = "comboBoxRole";
             this.comboBoxRole.Size = new System.Drawing.Size(217, 24);
             this.comboBoxRole.TabIndex = 5;
@@ -191,7 +191,7 @@
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(65, 23);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(83, 22);
             this.txtID.TabIndex = 3;
@@ -210,7 +210,7 @@
             // 
             this.comboBoxUser.FormattingEnabled = true;
             this.comboBoxUser.Location = new System.Drawing.Point(65, 55);
-            this.comboBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxUser.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxUser.Name = "comboBoxUser";
             this.comboBoxUser.Size = new System.Drawing.Size(217, 24);
             this.comboBoxUser.TabIndex = 1;
@@ -234,7 +234,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBoxMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormEmployee";
