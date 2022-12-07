@@ -94,18 +94,21 @@
             this.groupBoxMain.Controls.Add(this.txtID);
             this.groupBoxMain.Controls.Add(this.lblID);
             this.groupBoxMain.Controls.Add(this.lblBrand);
-            this.groupBoxMain.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxMain.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxMain.Name = "groupBoxMain";
-            this.groupBoxMain.Size = new System.Drawing.Size(600, 195);
+            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Size = new System.Drawing.Size(800, 240);
             this.groupBoxMain.TabIndex = 0;
             this.groupBoxMain.TabStop = false;
             this.groupBoxMain.Text = "Employee info";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(394, 162);
+            this.btnCancel.Location = new System.Drawing.Point(525, 199);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 23;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -114,17 +117,19 @@
             // dateTimePickerRegisterDate
             // 
             this.dateTimePickerRegisterDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerRegisterDate.Location = new System.Drawing.Point(386, 130);
+            this.dateTimePickerRegisterDate.Location = new System.Drawing.Point(515, 160);
+            this.dateTimePickerRegisterDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerRegisterDate.Name = "dateTimePickerRegisterDate";
-            this.dateTimePickerRegisterDate.Size = new System.Drawing.Size(164, 20);
+            this.dateTimePickerRegisterDate.Size = new System.Drawing.Size(217, 22);
             this.dateTimePickerRegisterDate.TabIndex = 22;
             // 
             // lblRegisterDate
             // 
             this.lblRegisterDate.AutoSize = true;
-            this.lblRegisterDate.Location = new System.Drawing.Point(307, 134);
+            this.lblRegisterDate.Location = new System.Drawing.Point(409, 165);
+            this.lblRegisterDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegisterDate.Name = "lblRegisterDate";
-            this.lblRegisterDate.Size = new System.Drawing.Size(73, 13);
+            this.lblRegisterDate.Size = new System.Drawing.Size(91, 16);
             this.lblRegisterDate.TabIndex = 21;
             this.lblRegisterDate.Text = "Register date:";
             // 
@@ -135,17 +140,19 @@
             "",
             "Yes",
             "No"});
-            this.comboBoxIsDeleted.Location = new System.Drawing.Point(386, 103);
+            this.comboBoxIsDeleted.Location = new System.Drawing.Point(515, 127);
+            this.comboBoxIsDeleted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxIsDeleted.Name = "comboBoxIsDeleted";
-            this.comboBoxIsDeleted.Size = new System.Drawing.Size(80, 21);
+            this.comboBoxIsDeleted.Size = new System.Drawing.Size(105, 24);
             this.comboBoxIsDeleted.TabIndex = 20;
             // 
             // lblIsDeleted
             // 
             this.lblIsDeleted.AutoSize = true;
-            this.lblIsDeleted.Location = new System.Drawing.Point(322, 106);
+            this.lblIsDeleted.Location = new System.Drawing.Point(429, 130);
+            this.lblIsDeleted.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIsDeleted.Name = "lblIsDeleted";
-            this.lblIsDeleted.Size = new System.Drawing.Size(58, 13);
+            this.lblIsDeleted.Size = new System.Drawing.Size(71, 16);
             this.lblIsDeleted.TabIndex = 19;
             this.lblIsDeleted.Text = "Is Deleted:";
             // 
@@ -156,80 +163,90 @@
             "",
             "Yes",
             "No"});
-            this.comboBoxIsRented.Location = new System.Drawing.Point(386, 76);
+            this.comboBoxIsRented.Location = new System.Drawing.Point(515, 94);
+            this.comboBoxIsRented.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxIsRented.Name = "comboBoxIsRented";
-            this.comboBoxIsRented.Size = new System.Drawing.Size(80, 21);
+            this.comboBoxIsRented.Size = new System.Drawing.Size(105, 24);
             this.comboBoxIsRented.TabIndex = 18;
             // 
             // lblIsRented
             // 
             this.lblIsRented.AutoSize = true;
-            this.lblIsRented.Location = new System.Drawing.Point(329, 79);
+            this.lblIsRented.Location = new System.Drawing.Point(439, 97);
+            this.lblIsRented.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIsRented.Name = "lblIsRented";
-            this.lblIsRented.Size = new System.Drawing.Size(51, 13);
+            this.lblIsRented.Size = new System.Drawing.Size(61, 16);
             this.lblIsRented.TabIndex = 17;
             this.lblIsRented.Text = "Is rented:";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(75, 127);
+            this.txtPrice.Location = new System.Drawing.Point(100, 156);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(156, 20);
+            this.txtPrice.Size = new System.Drawing.Size(207, 22);
             this.txtPrice.TabIndex = 16;
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(31, 130);
+            this.lblPrice.Location = new System.Drawing.Point(41, 160);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(34, 13);
+            this.lblPrice.Size = new System.Drawing.Size(41, 16);
             this.lblPrice.TabIndex = 15;
             this.lblPrice.Text = "Price:";
             // 
             // txtColor
             // 
-            this.txtColor.Location = new System.Drawing.Point(75, 101);
+            this.txtColor.Location = new System.Drawing.Point(100, 124);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(156, 20);
+            this.txtColor.Size = new System.Drawing.Size(207, 22);
             this.txtColor.TabIndex = 14;
             // 
             // lblColor
             // 
             this.lblColor.AutoSize = true;
-            this.lblColor.Location = new System.Drawing.Point(31, 104);
+            this.lblColor.Location = new System.Drawing.Point(41, 128);
+            this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(34, 13);
+            this.lblColor.Size = new System.Drawing.Size(42, 16);
             this.lblColor.TabIndex = 13;
             this.lblColor.Text = "Color:";
             // 
             // txtYear
             // 
-            this.txtYear.Location = new System.Drawing.Point(75, 75);
+            this.txtYear.Location = new System.Drawing.Point(100, 92);
+            this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(156, 20);
+            this.txtYear.Size = new System.Drawing.Size(207, 22);
             this.txtYear.TabIndex = 12;
             // 
             // lblYear
             // 
             this.lblYear.AutoSize = true;
-            this.lblYear.Location = new System.Drawing.Point(31, 78);
+            this.lblYear.Location = new System.Drawing.Point(41, 96);
+            this.lblYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(32, 13);
+            this.lblYear.Size = new System.Drawing.Size(39, 16);
             this.lblYear.TabIndex = 11;
             this.lblYear.Text = "Year:";
             // 
             // txtBrand
             // 
-            this.txtBrand.Location = new System.Drawing.Point(75, 49);
+            this.txtBrand.Location = new System.Drawing.Point(100, 60);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(156, 20);
+            this.txtBrand.Size = new System.Drawing.Size(207, 22);
             this.txtBrand.TabIndex = 10;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(475, 162);
+            this.btnSearch.Location = new System.Drawing.Point(633, 199);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -237,9 +254,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(237, 162);
+            this.btnDelete.Location = new System.Drawing.Point(316, 199);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -247,9 +265,10 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(156, 162);
+            this.btnEdit.Location = new System.Drawing.Point(208, 199);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -257,9 +276,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(75, 162);
+            this.btnSave.Location = new System.Drawing.Point(100, 199);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -268,92 +288,104 @@
             // comboBoxVehicleType
             // 
             this.comboBoxVehicleType.FormattingEnabled = true;
-            this.comboBoxVehicleType.Location = new System.Drawing.Point(386, 49);
+            this.comboBoxVehicleType.Location = new System.Drawing.Point(515, 60);
+            this.comboBoxVehicleType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxVehicleType.Name = "comboBoxVehicleType";
-            this.comboBoxVehicleType.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxVehicleType.Size = new System.Drawing.Size(217, 24);
             this.comboBoxVehicleType.TabIndex = 5;
             // 
             // lblVehicleType
             // 
             this.lblVehicleType.AutoSize = true;
-            this.lblVehicleType.Location = new System.Drawing.Point(346, 52);
+            this.lblVehicleType.Location = new System.Drawing.Point(461, 64);
+            this.lblVehicleType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVehicleType.Name = "lblVehicleType";
-            this.lblVehicleType.Size = new System.Drawing.Size(34, 13);
+            this.lblVehicleType.Size = new System.Drawing.Size(42, 16);
             this.lblVehicleType.TabIndex = 4;
             this.lblVehicleType.Text = "Type:";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(75, 23);
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(100, 28);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(63, 20);
+            this.txtID.Size = new System.Drawing.Size(83, 22);
             this.txtID.TabIndex = 3;
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(48, 26);
+            this.lblID.Location = new System.Drawing.Point(64, 32);
+            this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 13);
+            this.lblID.Size = new System.Drawing.Size(23, 16);
             this.lblID.TabIndex = 2;
             this.lblID.Text = "ID:";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Location = new System.Drawing.Point(31, 52);
+            this.lblBrand.Location = new System.Drawing.Point(41, 64);
+            this.lblBrand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(38, 13);
+            this.lblBrand.Size = new System.Drawing.Size(46, 16);
             this.lblBrand.TabIndex = 0;
             this.lblBrand.Text = "Brand:";
             // 
             // statusStripMain
             // 
+            this.statusStripMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblCountItem,
             this.lblCountItemNo});
-            this.statusStripMain.Location = new System.Drawing.Point(0, 539);
+            this.statusStripMain.Location = new System.Drawing.Point(0, 664);
             this.statusStripMain.Name = "statusStripMain";
-            this.statusStripMain.Size = new System.Drawing.Size(784, 22);
+            this.statusStripMain.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStripMain.Size = new System.Drawing.Size(1045, 26);
             this.statusStripMain.TabIndex = 1;
             this.statusStripMain.Text = "statusStrip1";
             // 
             // lblCountItem
             // 
             this.lblCountItem.Name = "lblCountItem";
-            this.lblCountItem.Size = new System.Drawing.Size(70, 17);
+            this.lblCountItem.Size = new System.Drawing.Size(85, 20);
             this.lblCountItem.Text = "Item Count:";
             // 
             // lblCountItemNo
             // 
             this.lblCountItemNo.Name = "lblCountItemNo";
-            this.lblCountItemNo.Size = new System.Drawing.Size(13, 17);
+            this.lblCountItemNo.Size = new System.Drawing.Size(17, 20);
             this.lblCountItemNo.Text = "0";
             // 
             // pictureBoxMain
             // 
             this.pictureBoxMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxMain.Location = new System.Drawing.Point(618, 213);
+            this.pictureBoxMain.Location = new System.Drawing.Point(824, 262);
+            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(154, 102);
+            this.pictureBoxMain.Size = new System.Drawing.Size(205, 125);
             this.pictureBoxMain.TabIndex = 5;
             this.pictureBoxMain.TabStop = false;
             // 
             // lblImageList
             // 
             this.lblImageList.AutoSize = true;
-            this.lblImageList.Location = new System.Drawing.Point(615, 12);
+            this.lblImageList.Location = new System.Drawing.Point(820, 15);
+            this.lblImageList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImageList.Name = "lblImageList";
-            this.lblImageList.Size = new System.Drawing.Size(91, 13);
+            this.lblImageList.Size = new System.Drawing.Size(115, 16);
             this.lblImageList.TabIndex = 6;
             this.lblImageList.Text = "Vehicle image list:";
             // 
             // btnDeleteImage
             // 
             this.btnDeleteImage.Image = global::CarRental.Properties.Resources.Trash_can_icon;
-            this.btnDeleteImage.Location = new System.Drawing.Point(735, 28);
+            this.btnDeleteImage.Location = new System.Drawing.Point(980, 34);
+            this.btnDeleteImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDeleteImage.Name = "btnDeleteImage";
-            this.btnDeleteImage.Size = new System.Drawing.Size(34, 33);
+            this.btnDeleteImage.Size = new System.Drawing.Size(45, 41);
             this.btnDeleteImage.TabIndex = 7;
             this.btnDeleteImage.UseVisualStyleBackColor = true;
             this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
@@ -361,9 +393,10 @@
             // btnAddImage
             // 
             this.btnAddImage.Image = global::CarRental.Properties.Resources.camera_icon;
-            this.btnAddImage.Location = new System.Drawing.Point(615, 28);
+            this.btnAddImage.Location = new System.Drawing.Point(820, 34);
+            this.btnAddImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(34, 33);
+            this.btnAddImage.Size = new System.Drawing.Size(45, 41);
             this.btnAddImage.TabIndex = 8;
             this.btnAddImage.UseVisualStyleBackColor = true;
             this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
@@ -371,35 +404,39 @@
             // listViewComments
             // 
             this.listViewComments.HideSelection = false;
-            this.listViewComments.Location = new System.Drawing.Point(12, 213);
+            this.listViewComments.Location = new System.Drawing.Point(16, 262);
+            this.listViewComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewComments.Name = "listViewComments";
-            this.listViewComments.Size = new System.Drawing.Size(600, 102);
+            this.listViewComments.Size = new System.Drawing.Size(799, 125);
             this.listViewComments.TabIndex = 9;
             this.listViewComments.UseCompatibleStateImageBehavior = false;
             // 
             // dataGridViewMain
             // 
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMain.Location = new System.Drawing.Point(12, 321);
+            this.dataGridViewMain.Location = new System.Drawing.Point(16, 395);
+            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewMain.Name = "dataGridViewMain";
-            this.dataGridViewMain.Size = new System.Drawing.Size(760, 215);
+            this.dataGridViewMain.RowHeadersWidth = 51;
+            this.dataGridViewMain.Size = new System.Drawing.Size(1013, 265);
             this.dataGridViewMain.TabIndex = 10;
             // 
             // listViewImages
             // 
             this.listViewImages.HideSelection = false;
-            this.listViewImages.Location = new System.Drawing.Point(618, 67);
+            this.listViewImages.Location = new System.Drawing.Point(824, 82);
+            this.listViewImages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listViewImages.Name = "listViewImages";
-            this.listViewImages.Size = new System.Drawing.Size(154, 140);
+            this.listViewImages.Size = new System.Drawing.Size(204, 171);
             this.listViewImages.TabIndex = 11;
             this.listViewImages.UseCompatibleStateImageBehavior = false;
             this.listViewImages.SelectedIndexChanged += new System.EventHandler(this.listViewImages_SelectedIndexChanged);
             // 
             // FormVehicle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1045, 690);
             this.Controls.Add(this.listViewImages);
             this.Controls.Add(this.dataGridViewMain);
             this.Controls.Add(this.listViewComments);
@@ -410,6 +447,7 @@
             this.Controls.Add(this.statusStripMain);
             this.Controls.Add(this.groupBoxMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormVehicle";

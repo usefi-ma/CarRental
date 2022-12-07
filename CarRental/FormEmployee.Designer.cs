@@ -53,33 +53,37 @@
             // dataGridViewMain
             // 
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMain.Location = new System.Drawing.Point(12, 134);
+            this.dataGridViewMain.Location = new System.Drawing.Point(16, 165);
+            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewMain.Name = "dataGridViewMain";
-            this.dataGridViewMain.Size = new System.Drawing.Size(600, 282);
+            this.dataGridViewMain.RowHeadersWidth = 51;
+            this.dataGridViewMain.Size = new System.Drawing.Size(800, 347);
             this.dataGridViewMain.TabIndex = 5;
             this.dataGridViewMain.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMain_CellContentClick);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblCountItem,
             this.lblCountItemNo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 419);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 517);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(624, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(832, 26);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // lblCountItem
             // 
             this.lblCountItem.Name = "lblCountItem";
-            this.lblCountItem.Size = new System.Drawing.Size(70, 17);
+            this.lblCountItem.Size = new System.Drawing.Size(85, 20);
             this.lblCountItem.Text = "Item Count:";
             // 
             // lblCountItemNo
             // 
             this.lblCountItemNo.Name = "lblCountItemNo";
-            this.lblCountItemNo.Size = new System.Drawing.Size(13, 17);
+            this.lblCountItemNo.Size = new System.Drawing.Size(17, 20);
             this.lblCountItemNo.Text = "0";
             // 
             // groupBoxMain
@@ -95,18 +99,21 @@
             this.groupBoxMain.Controls.Add(this.lblID);
             this.groupBoxMain.Controls.Add(this.comboBoxUser);
             this.groupBoxMain.Controls.Add(this.lblUser);
-            this.groupBoxMain.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxMain.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxMain.Name = "groupBoxMain";
-            this.groupBoxMain.Size = new System.Drawing.Size(600, 116);
+            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Size = new System.Drawing.Size(800, 143);
             this.groupBoxMain.TabIndex = 3;
             this.groupBoxMain.TabStop = false;
             this.groupBoxMain.Text = "Employee info";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(394, 83);
+            this.btnCancel.Location = new System.Drawing.Point(525, 102);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 44;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -114,9 +121,10 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(475, 83);
+            this.btnSearch.Location = new System.Drawing.Point(633, 102);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -124,9 +132,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(211, 83);
+            this.btnDelete.Location = new System.Drawing.Point(281, 102);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -134,9 +143,10 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(130, 83);
+            this.btnEdit.Location = new System.Drawing.Point(173, 102);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -144,9 +154,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(49, 83);
+            this.btnSave.Location = new System.Drawing.Point(65, 102);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -159,62 +170,71 @@
             "",
             "Administrator",
             "Employee"});
-            this.comboBoxRole.Location = new System.Drawing.Point(386, 45);
+            this.comboBoxRole.Location = new System.Drawing.Point(515, 55);
+            this.comboBoxRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxRole.Size = new System.Drawing.Size(217, 24);
             this.comboBoxRole.TabIndex = 5;
             // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(348, 48);
+            this.lblRole.Location = new System.Drawing.Point(464, 59);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(32, 13);
+            this.lblRole.Size = new System.Drawing.Size(39, 16);
             this.lblRole.TabIndex = 4;
             this.lblRole.Text = "Role:";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(49, 19);
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(65, 23);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(63, 20);
+            this.txtID.Size = new System.Drawing.Size(83, 22);
             this.txtID.TabIndex = 3;
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(22, 22);
+            this.lblID.Location = new System.Drawing.Point(29, 27);
+            this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 13);
+            this.lblID.Size = new System.Drawing.Size(23, 16);
             this.lblID.TabIndex = 2;
             this.lblID.Text = "ID:";
             // 
             // comboBoxUser
             // 
             this.comboBoxUser.FormattingEnabled = true;
-            this.comboBoxUser.Location = new System.Drawing.Point(49, 45);
+            this.comboBoxUser.Location = new System.Drawing.Point(65, 55);
+            this.comboBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxUser.Name = "comboBoxUser";
-            this.comboBoxUser.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxUser.Size = new System.Drawing.Size(217, 24);
             this.comboBoxUser.TabIndex = 1;
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(11, 48);
+            this.lblUser.Location = new System.Drawing.Point(15, 59);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(32, 13);
+            this.lblUser.Size = new System.Drawing.Size(39, 16);
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "User:";
             // 
             // FormEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(832, 543);
             this.Controls.Add(this.dataGridViewMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBoxMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormEmployee";
