@@ -16,7 +16,6 @@ namespace CarRental
     {
 
         DBManager dbManager = new DBManager();
-        private List<VehicleType> vehicleTypes = new List<VehicleType>();
 
         public FormVehicleType()
         {

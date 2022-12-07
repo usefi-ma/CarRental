@@ -14,7 +14,6 @@ namespace CarRental
     public partial class FormEmployee : Form
     {
         DBManager dbManager = new DBManager();
-        private List<Employee> Employees = new List<Employee>();
 
         public FormEmployee()
         {
