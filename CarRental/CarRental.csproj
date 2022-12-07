@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Class\DBManager.cs" />
     <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\GeneralClass.cs" />
     <Compile Include="Class\Rent.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Class\Vehicle.cs" />

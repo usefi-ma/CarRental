@@ -43,7 +43,6 @@ namespace CarRental.Class
             return dt;
         }
 
-
     }
     
 }
