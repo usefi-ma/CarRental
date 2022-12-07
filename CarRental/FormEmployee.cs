@@ -107,8 +107,8 @@ namespace CarRental
                 {
                     DataGridViewRow row = this.dataGridViewMain.SelectedRows[0];
                     txtID.Text = row.Cells["EmployeeId"].Value.ToString();
-                    comboBoxRole.Text = row.Cells["Role"].Value.ToString();
-                    comboBoxUser.Text = row.Cells["UserId"].Value.ToString();
+                    comboBoxRole.SelectedItem = row.Cells["Role"].Value.ToString();
+                    comboBoxUser.SelectedItem = row.Cells["UserId"].Value.ToString();
                 }
             }
             catch (Exception ex)
