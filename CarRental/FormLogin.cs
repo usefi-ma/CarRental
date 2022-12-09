@@ -100,7 +100,7 @@ namespace CarRental
         private void LoginUser()
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("Select * from Customer Where Username=@a and Password=@b", conn);
+            SqlCommand cmd = new SqlCommand("Select * from [user] Where Username=@a and Password=@b", conn);
 
             cmd.Parameters.AddWithValue("@a", txtUsername.Text);
             cmd.Parameters.AddWithValue("@b", txtPassword.Text);
