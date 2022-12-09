@@ -198,6 +198,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Database\CarRental-2022-06-12-Mahya.zip" />
+    <None Include="Database\MyCarRental-2022-12-08-Mahya.bak" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
