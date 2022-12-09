@@ -143,9 +143,9 @@ namespace CarRental
             txtColor.Text = string.Empty;
             txtPrice.Text = string.Empty;
 
-            comboBoxVehicleType.SelectedIndex = -1;
-            comboBoxIsRented.SelectedIndex = -1;
-            comboBoxIsDeleted.SelectedIndex = -1;
+            comboBoxVehicleType.Text = "";
+            comboBoxIsRented.Text = "";
+            comboBoxIsDeleted.Text = "";
 
             dateTimePickerRegisterDate.Text = string.Empty;
             listViewImages.Clear();
@@ -161,15 +161,19 @@ namespace CarRental
                 if (dataGridViewMain.SelectedRows.Count != 0)
                 {
                     DataGridViewRow row = this.dataGridViewMain.SelectedRows[0];
+
+                    string IsRented = (Convert.ToBoolean(row.Cells["IsRented"].Value) == false ? "No" : "Yes");
+                    string IsDeleted = (Convert.ToBoolean(row.Cells["IsDeleted"].Value) == false ? "No" : "Yes");
+
                     txtID.Text = row.Cells["VehicleID"].Value.ToString();
                     txtBrand.Text = row.Cells["Brand"].Value.ToString();
                     txtYear.Text = row.Cells["Year"].Value.ToString();
                     txtColor.Text = row.Cells["Color"].Value.ToString();
                     txtPrice.Text = row.Cells["Price"].Value.ToString();
-                    comboBoxIsRented.Text = row.Cells["IsRented"].Value.ToString();
+                    comboBoxIsRented.Text = IsRented;
                     dateTimePickerRegisterDate.Text = row.Cells["RegisteredDate"].Value.ToString();
                     comboBoxVehicleType.Text = row.Cells["Type"].Value.ToString();
-                    comboBoxIsDeleted.Text = row.Cells["IsDeleted"].Value.ToString();
+                    comboBoxIsDeleted.Text = IsDeleted;
                 }
             }
             catch (Exception ex)
@@ -206,14 +210,17 @@ namespace CarRental
         {
             if (txtID.Text.Trim() != "")
             {
+                int IsRented = (comboBoxIsRented.SelectedItem.ToString() == "No" ? 0 : 1);
+                int IsDeleted = (comboBoxIsDeleted.SelectedItem.ToString() == "No" ? 0 : 1);
+
                 string queryString = "UPDATE Vehicle SET Brand='" + txtBrand.Text + "'" +
                     ",Year='" + txtYear.Text + "'" +
                     ",Color='" + txtColor.Text + "'" +
                     ",Price='" + txtPrice.Text + "'" +
-                    ",IsRented='" + comboBoxIsRented.Text + "'" +
+                    ",IsRented='" + IsRented + "'" +
                     ",RegisteredDate='" + dateTimePickerRegisterDate.Value.ToShortDateString() + "'" +
                     ",Type='" + comboBoxVehicleType.SelectedIndex + "'" +
-                    ",IsDeleted='" + comboBoxIsDeleted.SelectedIndex + "'" +
+                    ",IsDeleted=" + IsDeleted + "" +
                     " WHERE VehicleID=" + txtID.Text + ";";
                 bool status = dbManager.ManageData(queryString);
                 if (status)
@@ -268,7 +275,7 @@ namespace CarRental
                 string queryString = "select * from Vehicle where Brand like N'%" + brand + "%' and Color like N'%" + color + "%' and Price like N'%" + price + "%'";
                 DataTable dtData = dbManager.SelectData(queryString);
                 dataGridViewMain.DataSource = dtData;
-            } 
+            }
             else
             {
                 MessageBox.Show("You have to enter one of the items in the form.", "Vehicle - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
