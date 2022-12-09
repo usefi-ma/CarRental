@@ -95,9 +95,9 @@
             this.groupBoxMain.Controls.Add(this.lblID);
             this.groupBoxMain.Controls.Add(this.lblBrand);
             this.groupBoxMain.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMain.Name = "groupBoxMain";
-            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMain.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxMain.Size = new System.Drawing.Size(800, 240);
             this.groupBoxMain.TabIndex = 0;
             this.groupBoxMain.TabStop = false;
@@ -106,7 +106,7 @@
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(525, 199);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 23;
@@ -118,7 +118,7 @@
             // 
             this.dateTimePickerRegisterDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerRegisterDate.Location = new System.Drawing.Point(515, 160);
-            this.dateTimePickerRegisterDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerRegisterDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerRegisterDate.Name = "dateTimePickerRegisterDate";
             this.dateTimePickerRegisterDate.Size = new System.Drawing.Size(217, 22);
             this.dateTimePickerRegisterDate.TabIndex = 22;
@@ -137,11 +137,10 @@
             // 
             this.comboBoxIsDeleted.FormattingEnabled = true;
             this.comboBoxIsDeleted.Items.AddRange(new object[] {
-            "",
-            "Yes",
-            "No"});
+            "No",
+            "Yes"});
             this.comboBoxIsDeleted.Location = new System.Drawing.Point(515, 127);
-            this.comboBoxIsDeleted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxIsDeleted.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxIsDeleted.Name = "comboBoxIsDeleted";
             this.comboBoxIsDeleted.Size = new System.Drawing.Size(105, 24);
             this.comboBoxIsDeleted.TabIndex = 20;
@@ -160,11 +159,10 @@
             // 
             this.comboBoxIsRented.FormattingEnabled = true;
             this.comboBoxIsRented.Items.AddRange(new object[] {
-            "",
-            "Yes",
-            "No"});
+            "No",
+            "Yes"});
             this.comboBoxIsRented.Location = new System.Drawing.Point(515, 94);
-            this.comboBoxIsRented.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxIsRented.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxIsRented.Name = "comboBoxIsRented";
             this.comboBoxIsRented.Size = new System.Drawing.Size(105, 24);
             this.comboBoxIsRented.TabIndex = 18;
@@ -182,7 +180,7 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(100, 156);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(207, 22);
             this.txtPrice.TabIndex = 16;
@@ -200,7 +198,7 @@
             // txtColor
             // 
             this.txtColor.Location = new System.Drawing.Point(100, 124);
-            this.txtColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(4);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(207, 22);
             this.txtColor.TabIndex = 14;
@@ -218,7 +216,7 @@
             // txtYear
             // 
             this.txtYear.Location = new System.Drawing.Point(100, 92);
-            this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtYear.Margin = new System.Windows.Forms.Padding(4);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(207, 22);
             this.txtYear.TabIndex = 12;
@@ -236,7 +234,7 @@
             // txtBrand
             // 
             this.txtBrand.Location = new System.Drawing.Point(100, 60);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(4);
             this.txtBrand.Name = "txtBrand";
             this.txtBrand.Size = new System.Drawing.Size(207, 22);
             this.txtBrand.TabIndex = 10;
@@ -244,7 +242,7 @@
             // btnSearch
             // 
             this.btnSearch.Location = new System.Drawing.Point(633, 199);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 9;
@@ -255,7 +253,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(316, 199);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 8;
@@ -266,7 +264,7 @@
             // btnEdit
             // 
             this.btnEdit.Location = new System.Drawing.Point(208, 199);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 7;
@@ -277,7 +275,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(100, 199);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 6;
@@ -289,7 +287,7 @@
             // 
             this.comboBoxVehicleType.FormattingEnabled = true;
             this.comboBoxVehicleType.Location = new System.Drawing.Point(515, 60);
-            this.comboBoxVehicleType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxVehicleType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxVehicleType.Name = "comboBoxVehicleType";
             this.comboBoxVehicleType.Size = new System.Drawing.Size(217, 24);
             this.comboBoxVehicleType.TabIndex = 5;
@@ -309,7 +307,7 @@
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(100, 28);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(83, 22);
             this.txtID.TabIndex = 3;
@@ -363,7 +361,7 @@
             // 
             this.pictureBoxMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxMain.Location = new System.Drawing.Point(824, 262);
-            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxMain.Name = "pictureBoxMain";
             this.pictureBoxMain.Size = new System.Drawing.Size(205, 125);
             this.pictureBoxMain.TabIndex = 5;
@@ -383,7 +381,7 @@
             // 
             this.btnDeleteImage.Image = global::CarRental.Properties.Resources.Trash_can_icon;
             this.btnDeleteImage.Location = new System.Drawing.Point(980, 34);
-            this.btnDeleteImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeleteImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteImage.Name = "btnDeleteImage";
             this.btnDeleteImage.Size = new System.Drawing.Size(45, 41);
             this.btnDeleteImage.TabIndex = 7;
@@ -394,7 +392,7 @@
             // 
             this.btnAddImage.Image = global::CarRental.Properties.Resources.camera_icon;
             this.btnAddImage.Location = new System.Drawing.Point(820, 34);
-            this.btnAddImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(45, 41);
             this.btnAddImage.TabIndex = 8;
@@ -405,7 +403,7 @@
             // 
             this.listViewComments.HideSelection = false;
             this.listViewComments.Location = new System.Drawing.Point(16, 262);
-            this.listViewComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewComments.Margin = new System.Windows.Forms.Padding(4);
             this.listViewComments.Name = "listViewComments";
             this.listViewComments.Size = new System.Drawing.Size(799, 125);
             this.listViewComments.TabIndex = 9;
@@ -415,22 +413,22 @@
             // 
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMain.Location = new System.Drawing.Point(16, 395);
-            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewMain.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewMain.Name = "dataGridViewMain";
             this.dataGridViewMain.RowHeadersWidth = 51;
             this.dataGridViewMain.Size = new System.Drawing.Size(1013, 265);
             this.dataGridViewMain.TabIndex = 10;
+            this.dataGridViewMain.CurrentCellChanged += new System.EventHandler(this.dataGridViewMain_CurrentCellChanged);
             // 
             // listViewImages
             // 
             this.listViewImages.HideSelection = false;
             this.listViewImages.Location = new System.Drawing.Point(824, 82);
-            this.listViewImages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewImages.Margin = new System.Windows.Forms.Padding(4);
             this.listViewImages.Name = "listViewImages";
             this.listViewImages.Size = new System.Drawing.Size(204, 171);
             this.listViewImages.TabIndex = 11;
             this.listViewImages.UseCompatibleStateImageBehavior = false;
-            this.listViewImages.SelectedIndexChanged += new System.EventHandler(this.listViewImages_SelectedIndexChanged);
             // 
             // FormVehicle
             // 
@@ -447,7 +445,7 @@
             this.Controls.Add(this.statusStripMain);
             this.Controls.Add(this.groupBoxMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormVehicle";
