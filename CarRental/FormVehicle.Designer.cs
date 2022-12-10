@@ -360,10 +360,12 @@
             // pictureBoxMain
             // 
             this.pictureBoxMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxMain.Image = global::CarRental.Properties.Resources._0;
             this.pictureBoxMain.Location = new System.Drawing.Point(824, 262);
             this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxMain.Name = "pictureBoxMain";
             this.pictureBoxMain.Size = new System.Drawing.Size(205, 125);
+            this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMain.TabIndex = 5;
             this.pictureBoxMain.TabStop = false;
             // 
@@ -408,6 +410,7 @@
             this.listViewComments.Size = new System.Drawing.Size(799, 125);
             this.listViewComments.TabIndex = 9;
             this.listViewComments.UseCompatibleStateImageBehavior = false;
+            this.listViewComments.View = System.Windows.Forms.View.List;
             // 
             // dataGridViewMain
             // 
@@ -429,6 +432,8 @@
             this.listViewImages.Size = new System.Drawing.Size(204, 171);
             this.listViewImages.TabIndex = 11;
             this.listViewImages.UseCompatibleStateImageBehavior = false;
+            this.listViewImages.View = System.Windows.Forms.View.List;
+            this.listViewImages.SelectedIndexChanged += new System.EventHandler(this.listViewImages_SelectedIndexChanged);
             // 
             // FormVehicle
             // 

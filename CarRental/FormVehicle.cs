@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -150,8 +151,8 @@ namespace CarRental
             dateTimePickerRegisterDate.Text = string.Empty;
             listViewImages.Clear();
             listViewComments.Clear();
+            pictureBoxMain.Image = Image.FromFile(AppContext.BaseDirectory + "Images\\0.jpg");
 
-            // Select all data and show in grid
             SearchData();
         }
         private void dataGridViewMain_CurrentCellChanged(object sender, EventArgs e)
@@ -174,6 +175,9 @@ namespace CarRental
                     dateTimePickerRegisterDate.Text = row.Cells["RegisteredDate"].Value.ToString();
                     comboBoxVehicleType.Text = row.Cells["Type"].Value.ToString();
                     comboBoxIsDeleted.Text = IsDeleted;
+
+                    LoadImage(Convert.ToInt32(row.Cells["VehicleID"].Value.ToString()));
+                    LoadComment(Convert.ToInt32(row.Cells["VehicleID"].Value.ToString()));
                 }
             }
             catch (Exception ex)
@@ -282,5 +286,41 @@ namespace CarRental
             }
         }
 
+        private void LoadImage(int vehicleID)
+        {
+            string queryString = "Select * FROM VehicleImg Where vehicleID = " + vehicleID;
+            DataTable dtData = dbManager.SelectData(queryString);
+            if(dtData.Rows.Count > 0)
+            {
+                for(int i = 0; i < dtData.Rows.Count; i++)
+                {
+                    listViewImages.Items.Add(dtData.Rows[i]["ImgName"].ToString());
+                }
+            }
+        }
+
+        private void LoadComment(int vehicleID)
+        {
+            string queryString = "Select * FROM Comment Where VehicleID = " + vehicleID;
+            DataTable dtData = dbManager.SelectData(queryString);
+            if (dtData.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtData.Rows.Count; i++)
+                {
+                    listViewComments.Items.Add(dtData.Rows[i]["Date"].ToString() + " - " + dtData.Rows[i]["Description"].ToString());
+                }
+            }
+        }
+
+        private void listViewImages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listViewImages.SelectedItems.Count > 0)
+            {
+                string ImageAddress = AppContext.BaseDirectory + "\\Images\\" + listViewImages.SelectedItems[0].Text.ToString();
+                pictureBoxMain.Image = Image.FromFile(ImageAddress);
+            }
+            
+
+        }
     }
 }

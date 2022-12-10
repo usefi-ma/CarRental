@@ -213,6 +213,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Images\0.jpg" />
     <Content Include="CarRent.ico" />
     <None Include="Resources\Mahya.jpeg" />
     <None Include="Resources\Very-Basic-Reload-icon.png" />
