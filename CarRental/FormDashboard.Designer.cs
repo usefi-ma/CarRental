@@ -57,29 +57,19 @@
             this.lblAllVehicleNo = new System.Windows.Forms.Label();
             this.lblAllVehicle = new System.Windows.Forms.Label();
             this.groupBoxRentInfo = new System.Windows.Forms.GroupBox();
-            this.lblTodayRentNo = new System.Windows.Forms.Label();
-            this.lblTodayRent = new System.Windows.Forms.Label();
             this.lblAllRentNo = new System.Windows.Forms.Label();
             this.lblAllRent = new System.Windows.Forms.Label();
-            this.btnRefreshRentInfo = new System.Windows.Forms.Button();
             this.groupBoxUserInfo = new System.Windows.Forms.GroupBox();
-            this.lblRentUserNo = new System.Windows.Forms.Label();
-            this.lblRentUser = new System.Windows.Forms.Label();
             this.lblAllUserNo = new System.Windows.Forms.Label();
             this.lblAllUser = new System.Windows.Forms.Label();
-            this.btnRefreshUserInfo = new System.Windows.Forms.Button();
             this.groupBoxEmployeeInfo = new System.Windows.Forms.GroupBox();
-            this.lblActiveEmployeeNo = new System.Windows.Forms.Label();
-            this.lblActiveEmployee = new System.Windows.Forms.Label();
             this.lblAllEmployeeNo = new System.Windows.Forms.Label();
             this.lblAllEmployee = new System.Windows.Forms.Label();
-            this.btnRefreshEmployeeInfo = new System.Windows.Forms.Button();
             this.groupBoxAllVehicles = new System.Windows.Forms.GroupBox();
             this.btnVehicleComment = new System.Windows.Forms.Button();
             this.txtVehicleComment = new System.Windows.Forms.TextBox();
             this.lblVehicleComment = new System.Windows.Forms.Label();
             this.dataGridViewAllVehicles = new System.Windows.Forms.DataGridView();
-            this.btnAddToFavoriteVehicle = new System.Windows.Forms.Button();
             this.btnSearchAllVehicles = new System.Windows.Forms.Button();
             this.txtSearchAllVehicles = new System.Windows.Forms.TextBox();
             this.lblSearchAllVehicles = new System.Windows.Forms.Label();
@@ -103,12 +93,9 @@
             this.txtVehicle = new System.Windows.Forms.TextBox();
             this.lblVehicle = new System.Windows.Forms.Label();
             this.dataGridViewAllRent = new System.Windows.Forms.DataGridView();
-            this.groupBoxFavoriteVehicle = new System.Windows.Forms.GroupBox();
-            this.dataGridViewFavoriteVehicle = new System.Windows.Forms.DataGridView();
-            this.btnRemoveFavoriteVehicle = new System.Windows.Forms.Button();
-            this.btnSerachFavoriteVehicle = new System.Windows.Forms.Button();
-            this.txtSerachFavoriteVehicle = new System.Windows.Forms.TextBox();
-            this.lblSerachFavoriteVehicle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.groupBoxVehicleInfo.SuspendLayout();
@@ -119,8 +106,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllVehicles)).BeginInit();
             this.groupBoxRentVehicle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllRent)).BeginInit();
-            this.groupBoxFavoriteVehicle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFavoriteVehicle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -298,9 +286,9 @@
             this.groupBoxVehicleInfo.Controls.Add(this.lblAllVehicleNo);
             this.groupBoxVehicleInfo.Controls.Add(this.lblAllVehicle);
             this.groupBoxVehicleInfo.Location = new System.Drawing.Point(16, 33);
-            this.groupBoxVehicleInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxVehicleInfo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxVehicleInfo.Name = "groupBoxVehicleInfo";
-            this.groupBoxVehicleInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxVehicleInfo.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxVehicleInfo.Size = new System.Drawing.Size(316, 123);
             this.groupBoxVehicleInfo.TabIndex = 2;
             this.groupBoxVehicleInfo.TabStop = false;
@@ -310,7 +298,7 @@
             // 
             this.btnRefreshVevicleInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshVevicleInfo.Image")));
             this.btnRefreshVevicleInfo.Location = new System.Drawing.Point(263, 11);
-            this.btnRefreshVevicleInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefreshVevicleInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefreshVevicleInfo.Name = "btnRefreshVevicleInfo";
             this.btnRefreshVevicleInfo.Size = new System.Drawing.Size(45, 41);
             this.btnRefreshVevicleInfo.TabIndex = 5;
@@ -359,44 +347,22 @@
             // 
             // groupBoxRentInfo
             // 
-            this.groupBoxRentInfo.Controls.Add(this.lblTodayRentNo);
-            this.groupBoxRentInfo.Controls.Add(this.lblTodayRent);
+            this.groupBoxRentInfo.Controls.Add(this.pictureBox1);
             this.groupBoxRentInfo.Controls.Add(this.lblAllRentNo);
             this.groupBoxRentInfo.Controls.Add(this.lblAllRent);
-            this.groupBoxRentInfo.Controls.Add(this.btnRefreshRentInfo);
             this.groupBoxRentInfo.Location = new System.Drawing.Point(340, 33);
-            this.groupBoxRentInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRentInfo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxRentInfo.Name = "groupBoxRentInfo";
-            this.groupBoxRentInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRentInfo.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxRentInfo.Size = new System.Drawing.Size(316, 123);
             this.groupBoxRentInfo.TabIndex = 3;
             this.groupBoxRentInfo.TabStop = false;
             this.groupBoxRentInfo.Text = "Rent info";
             // 
-            // lblTodayRentNo
-            // 
-            this.lblTodayRentNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTodayRentNo.Location = new System.Drawing.Point(109, 74);
-            this.lblTodayRentNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTodayRentNo.Name = "lblTodayRentNo";
-            this.lblTodayRentNo.Size = new System.Drawing.Size(87, 18);
-            this.lblTodayRentNo.TabIndex = 8;
-            this.lblTodayRentNo.Text = "0";
-            // 
-            // lblTodayRent
-            // 
-            this.lblTodayRent.AutoSize = true;
-            this.lblTodayRent.Location = new System.Drawing.Point(20, 75);
-            this.lblTodayRent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTodayRent.Name = "lblTodayRent";
-            this.lblTodayRent.Size = new System.Drawing.Size(75, 16);
-            this.lblTodayRent.TabIndex = 7;
-            this.lblTodayRent.Text = "Today rent:";
-            // 
             // lblAllRentNo
             // 
             this.lblAllRentNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAllRentNo.Location = new System.Drawing.Point(109, 41);
+            this.lblAllRentNo.Location = new System.Drawing.Point(104, 72);
             this.lblAllRentNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllRentNo.Name = "lblAllRentNo";
             this.lblAllRentNo.Size = new System.Drawing.Size(87, 18);
@@ -406,64 +372,31 @@
             // lblAllRent
             // 
             this.lblAllRent.AutoSize = true;
-            this.lblAllRent.Location = new System.Drawing.Point(45, 42);
+            this.lblAllRent.Location = new System.Drawing.Point(40, 73);
             this.lblAllRent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllRent.Name = "lblAllRent";
             this.lblAllRent.Size = new System.Drawing.Size(50, 16);
             this.lblAllRent.TabIndex = 5;
             this.lblAllRent.Text = "All rent:";
             // 
-            // btnRefreshRentInfo
-            // 
-            this.btnRefreshRentInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshRentInfo.Image")));
-            this.btnRefreshRentInfo.Location = new System.Drawing.Point(263, 11);
-            this.btnRefreshRentInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRefreshRentInfo.Name = "btnRefreshRentInfo";
-            this.btnRefreshRentInfo.Size = new System.Drawing.Size(45, 41);
-            this.btnRefreshRentInfo.TabIndex = 4;
-            this.btnRefreshRentInfo.UseVisualStyleBackColor = true;
-            this.btnRefreshRentInfo.Click += new System.EventHandler(this.btnRefreshRentInfo_Click);
-            // 
             // groupBoxUserInfo
             // 
-            this.groupBoxUserInfo.Controls.Add(this.lblRentUserNo);
-            this.groupBoxUserInfo.Controls.Add(this.lblRentUser);
+            this.groupBoxUserInfo.Controls.Add(this.pictureBox2);
             this.groupBoxUserInfo.Controls.Add(this.lblAllUserNo);
             this.groupBoxUserInfo.Controls.Add(this.lblAllUser);
-            this.groupBoxUserInfo.Controls.Add(this.btnRefreshUserInfo);
             this.groupBoxUserInfo.Location = new System.Drawing.Point(664, 33);
-            this.groupBoxUserInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserInfo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxUserInfo.Name = "groupBoxUserInfo";
-            this.groupBoxUserInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserInfo.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxUserInfo.Size = new System.Drawing.Size(316, 123);
             this.groupBoxUserInfo.TabIndex = 4;
             this.groupBoxUserInfo.TabStop = false;
             this.groupBoxUserInfo.Text = "User info";
             // 
-            // lblRentUserNo
-            // 
-            this.lblRentUserNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRentUserNo.Location = new System.Drawing.Point(97, 75);
-            this.lblRentUserNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRentUserNo.Name = "lblRentUserNo";
-            this.lblRentUserNo.Size = new System.Drawing.Size(87, 18);
-            this.lblRentUserNo.TabIndex = 8;
-            this.lblRentUserNo.Text = "0";
-            // 
-            // lblRentUser
-            // 
-            this.lblRentUser.AutoSize = true;
-            this.lblRentUser.Location = new System.Drawing.Point(15, 78);
-            this.lblRentUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRentUser.Name = "lblRentUser";
-            this.lblRentUser.Size = new System.Drawing.Size(67, 16);
-            this.lblRentUser.TabIndex = 7;
-            this.lblRentUser.Text = "Rent user:";
-            // 
             // lblAllUserNo
             // 
             this.lblAllUserNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAllUserNo.Location = new System.Drawing.Point(97, 42);
+            this.lblAllUserNo.Location = new System.Drawing.Point(93, 71);
             this.lblAllUserNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllUserNo.Name = "lblAllUserNo";
             this.lblAllUserNo.Size = new System.Drawing.Size(87, 18);
@@ -473,64 +406,31 @@
             // lblAllUser
             // 
             this.lblAllUser.AutoSize = true;
-            this.lblAllUser.Location = new System.Drawing.Point(31, 43);
+            this.lblAllUser.Location = new System.Drawing.Point(27, 72);
             this.lblAllUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllUser.Name = "lblAllUser";
             this.lblAllUser.Size = new System.Drawing.Size(54, 16);
             this.lblAllUser.TabIndex = 5;
             this.lblAllUser.Text = "All user:";
             // 
-            // btnRefreshUserInfo
-            // 
-            this.btnRefreshUserInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshUserInfo.Image")));
-            this.btnRefreshUserInfo.Location = new System.Drawing.Point(263, 11);
-            this.btnRefreshUserInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRefreshUserInfo.Name = "btnRefreshUserInfo";
-            this.btnRefreshUserInfo.Size = new System.Drawing.Size(45, 41);
-            this.btnRefreshUserInfo.TabIndex = 4;
-            this.btnRefreshUserInfo.UseVisualStyleBackColor = true;
-            this.btnRefreshUserInfo.Click += new System.EventHandler(this.btnRefreshUserInfo_Click);
-            // 
             // groupBoxEmployeeInfo
             // 
-            this.groupBoxEmployeeInfo.Controls.Add(this.lblActiveEmployeeNo);
-            this.groupBoxEmployeeInfo.Controls.Add(this.lblActiveEmployee);
+            this.groupBoxEmployeeInfo.Controls.Add(this.pictureBox3);
             this.groupBoxEmployeeInfo.Controls.Add(this.lblAllEmployeeNo);
             this.groupBoxEmployeeInfo.Controls.Add(this.lblAllEmployee);
-            this.groupBoxEmployeeInfo.Controls.Add(this.btnRefreshEmployeeInfo);
             this.groupBoxEmployeeInfo.Location = new System.Drawing.Point(988, 33);
-            this.groupBoxEmployeeInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxEmployeeInfo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxEmployeeInfo.Name = "groupBoxEmployeeInfo";
-            this.groupBoxEmployeeInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxEmployeeInfo.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxEmployeeInfo.Size = new System.Drawing.Size(316, 123);
             this.groupBoxEmployeeInfo.TabIndex = 5;
             this.groupBoxEmployeeInfo.TabStop = false;
             this.groupBoxEmployeeInfo.Text = "Employee info";
             // 
-            // lblActiveEmployeeNo
-            // 
-            this.lblActiveEmployeeNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblActiveEmployeeNo.Location = new System.Drawing.Point(145, 75);
-            this.lblActiveEmployeeNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblActiveEmployeeNo.Name = "lblActiveEmployeeNo";
-            this.lblActiveEmployeeNo.Size = new System.Drawing.Size(87, 18);
-            this.lblActiveEmployeeNo.TabIndex = 8;
-            this.lblActiveEmployeeNo.Text = "0";
-            // 
-            // lblActiveEmployee
-            // 
-            this.lblActiveEmployee.AutoSize = true;
-            this.lblActiveEmployee.Location = new System.Drawing.Point(20, 76);
-            this.lblActiveEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblActiveEmployee.Name = "lblActiveEmployee";
-            this.lblActiveEmployee.Size = new System.Drawing.Size(111, 16);
-            this.lblActiveEmployee.TabIndex = 7;
-            this.lblActiveEmployee.Text = "Active employee:";
-            // 
             // lblAllEmployeeNo
             // 
             this.lblAllEmployeeNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAllEmployeeNo.Location = new System.Drawing.Point(145, 42);
+            this.lblAllEmployeeNo.Location = new System.Drawing.Point(138, 69);
             this.lblAllEmployeeNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllEmployeeNo.Name = "lblAllEmployeeNo";
             this.lblAllEmployeeNo.Size = new System.Drawing.Size(87, 18);
@@ -540,23 +440,12 @@
             // lblAllEmployee
             // 
             this.lblAllEmployee.AutoSize = true;
-            this.lblAllEmployee.Location = new System.Drawing.Point(45, 44);
+            this.lblAllEmployee.Location = new System.Drawing.Point(38, 71);
             this.lblAllEmployee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAllEmployee.Name = "lblAllEmployee";
             this.lblAllEmployee.Size = new System.Drawing.Size(89, 16);
             this.lblAllEmployee.TabIndex = 5;
             this.lblAllEmployee.Text = "All employee:";
-            // 
-            // btnRefreshEmployeeInfo
-            // 
-            this.btnRefreshEmployeeInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshEmployeeInfo.Image")));
-            this.btnRefreshEmployeeInfo.Location = new System.Drawing.Point(263, 11);
-            this.btnRefreshEmployeeInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRefreshEmployeeInfo.Name = "btnRefreshEmployeeInfo";
-            this.btnRefreshEmployeeInfo.Size = new System.Drawing.Size(45, 41);
-            this.btnRefreshEmployeeInfo.TabIndex = 4;
-            this.btnRefreshEmployeeInfo.UseVisualStyleBackColor = true;
-            this.btnRefreshEmployeeInfo.Click += new System.EventHandler(this.btnRefreshEmployeeInfo_Click);
             // 
             // groupBoxAllVehicles
             // 
@@ -564,23 +453,22 @@
             this.groupBoxAllVehicles.Controls.Add(this.txtVehicleComment);
             this.groupBoxAllVehicles.Controls.Add(this.lblVehicleComment);
             this.groupBoxAllVehicles.Controls.Add(this.dataGridViewAllVehicles);
-            this.groupBoxAllVehicles.Controls.Add(this.btnAddToFavoriteVehicle);
             this.groupBoxAllVehicles.Controls.Add(this.btnSearchAllVehicles);
             this.groupBoxAllVehicles.Controls.Add(this.txtSearchAllVehicles);
             this.groupBoxAllVehicles.Controls.Add(this.lblSearchAllVehicles);
             this.groupBoxAllVehicles.Location = new System.Drawing.Point(16, 164);
-            this.groupBoxAllVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxAllVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAllVehicles.Name = "groupBoxAllVehicles";
-            this.groupBoxAllVehicles.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxAllVehicles.Size = new System.Drawing.Size(640, 364);
+            this.groupBoxAllVehicles.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxAllVehicles.Size = new System.Drawing.Size(640, 619);
             this.groupBoxAllVehicles.TabIndex = 6;
             this.groupBoxAllVehicles.TabStop = false;
             this.groupBoxAllVehicles.Text = "All Vehicles";
             // 
             // btnVehicleComment
             // 
-            this.btnVehicleComment.Location = new System.Drawing.Point(511, 325);
-            this.btnVehicleComment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehicleComment.Location = new System.Drawing.Point(511, 576);
+            this.btnVehicleComment.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehicleComment.Name = "btnVehicleComment";
             this.btnVehicleComment.Size = new System.Drawing.Size(121, 28);
             this.btnVehicleComment.TabIndex = 7;
@@ -590,8 +478,8 @@
             // 
             // txtVehicleComment
             // 
-            this.txtVehicleComment.Location = new System.Drawing.Point(87, 327);
-            this.txtVehicleComment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVehicleComment.Location = new System.Drawing.Point(87, 578);
+            this.txtVehicleComment.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehicleComment.Name = "txtVehicleComment";
             this.txtVehicleComment.Size = new System.Drawing.Size(415, 22);
             this.txtVehicleComment.TabIndex = 6;
@@ -599,7 +487,7 @@
             // lblVehicleComment
             // 
             this.lblVehicleComment.AutoSize = true;
-            this.lblVehicleComment.Location = new System.Drawing.Point(8, 331);
+            this.lblVehicleComment.Location = new System.Drawing.Point(8, 582);
             this.lblVehicleComment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVehicleComment.Name = "lblVehicleComment";
             this.lblVehicleComment.Size = new System.Drawing.Size(67, 16);
@@ -610,30 +498,20 @@
             // 
             this.dataGridViewAllVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAllVehicles.Location = new System.Drawing.Point(8, 59);
-            this.dataGridViewAllVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewAllVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewAllVehicles.Name = "dataGridViewAllVehicles";
             this.dataGridViewAllVehicles.RowHeadersWidth = 51;
-            this.dataGridViewAllVehicles.Size = new System.Drawing.Size(624, 258);
+            this.dataGridViewAllVehicles.Size = new System.Drawing.Size(624, 509);
             this.dataGridViewAllVehicles.TabIndex = 4;
             this.dataGridViewAllVehicles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAllVehicles_CellContentClick);
-            // 
-            // btnAddToFavoriteVehicle
-            // 
-            this.btnAddToFavoriteVehicle.Image = global::CarRental.Properties.Resources.favourites_icon;
-            this.btnAddToFavoriteVehicle.Location = new System.Drawing.Point(587, 14);
-            this.btnAddToFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAddToFavoriteVehicle.Name = "btnAddToFavoriteVehicle";
-            this.btnAddToFavoriteVehicle.Size = new System.Drawing.Size(45, 41);
-            this.btnAddToFavoriteVehicle.TabIndex = 3;
-            this.btnAddToFavoriteVehicle.UseVisualStyleBackColor = true;
-            this.btnAddToFavoriteVehicle.Click += new System.EventHandler(this.btnAddToFavoriteVehicle_Click);
+            this.dataGridViewAllVehicles.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridViewAllVehicles_MouseClick);
             // 
             // btnSearchAllVehicles
             // 
             this.btnSearchAllVehicles.Location = new System.Drawing.Point(468, 20);
-            this.btnSearchAllVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchAllVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchAllVehicles.Name = "btnSearchAllVehicles";
-            this.btnSearchAllVehicles.Size = new System.Drawing.Size(100, 28);
+            this.btnSearchAllVehicles.Size = new System.Drawing.Size(164, 28);
             this.btnSearchAllVehicles.TabIndex = 2;
             this.btnSearchAllVehicles.Text = "Search";
             this.btnSearchAllVehicles.UseVisualStyleBackColor = true;
@@ -642,7 +520,7 @@
             // txtSearchAllVehicles
             // 
             this.txtSearchAllVehicles.Location = new System.Drawing.Point(87, 22);
-            this.txtSearchAllVehicles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchAllVehicles.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchAllVehicles.Name = "txtSearchAllVehicles";
             this.txtSearchAllVehicles.Size = new System.Drawing.Size(372, 22);
             this.txtSearchAllVehicles.TabIndex = 1;
@@ -679,9 +557,9 @@
             this.groupBoxRentVehicle.Controls.Add(this.lblVehicle);
             this.groupBoxRentVehicle.Controls.Add(this.dataGridViewAllRent);
             this.groupBoxRentVehicle.Location = new System.Drawing.Point(664, 164);
-            this.groupBoxRentVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRentVehicle.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxRentVehicle.Name = "groupBoxRentVehicle";
-            this.groupBoxRentVehicle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxRentVehicle.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxRentVehicle.Size = new System.Drawing.Size(640, 619);
             this.groupBoxRentVehicle.TabIndex = 7;
             this.groupBoxRentVehicle.TabStop = false;
@@ -690,7 +568,7 @@
             // btnCancelRentVehicle
             // 
             this.btnCancelRentVehicle.Location = new System.Drawing.Point(425, 273);
-            this.btnCancelRentVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelRentVehicle.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelRentVehicle.Name = "btnCancelRentVehicle";
             this.btnCancelRentVehicle.Size = new System.Drawing.Size(100, 28);
             this.btnCancelRentVehicle.TabIndex = 28;
@@ -701,7 +579,7 @@
             // btnRentVehicle
             // 
             this.btnRentVehicle.Location = new System.Drawing.Point(152, 273);
-            this.btnRentVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRentVehicle.Margin = new System.Windows.Forms.Padding(4);
             this.btnRentVehicle.Name = "btnRentVehicle";
             this.btnRentVehicle.Size = new System.Drawing.Size(100, 28);
             this.btnRentVehicle.TabIndex = 27;
@@ -713,7 +591,7 @@
             // 
             this.dateTimePickerRequestDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerRequestDate.Location = new System.Drawing.Point(152, 241);
-            this.dateTimePickerRequestDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerRequestDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerRequestDate.Name = "dateTimePickerRequestDate";
             this.dateTimePickerRequestDate.Size = new System.Drawing.Size(163, 22);
             this.dateTimePickerRequestDate.TabIndex = 26;
@@ -731,7 +609,7 @@
             // txtEmployeeTransfee
             // 
             this.txtEmployeeTransfee.Location = new System.Drawing.Point(152, 209);
-            this.txtEmployeeTransfee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeTransfee.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeTransfee.Name = "txtEmployeeTransfee";
             this.txtEmployeeTransfee.Size = new System.Drawing.Size(372, 22);
             this.txtEmployeeTransfee.TabIndex = 24;
@@ -749,7 +627,7 @@
             // txtDailyCost
             // 
             this.txtDailyCost.Location = new System.Drawing.Point(152, 177);
-            this.txtDailyCost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDailyCost.Margin = new System.Windows.Forms.Padding(4);
             this.txtDailyCost.Name = "txtDailyCost";
             this.txtDailyCost.Size = new System.Drawing.Size(163, 22);
             this.txtDailyCost.TabIndex = 22;
@@ -768,7 +646,7 @@
             // 
             this.dateTimePickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerEndDate.Location = new System.Drawing.Point(152, 145);
-            this.dateTimePickerEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerEndDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
             this.dateTimePickerEndDate.Size = new System.Drawing.Size(163, 22);
             this.dateTimePickerEndDate.TabIndex = 20;
@@ -787,7 +665,7 @@
             // 
             this.dateTimePickerStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerStartDate.Location = new System.Drawing.Point(152, 112);
-            this.dateTimePickerStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerStartDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerStartDate.Name = "dateTimePickerStartDate";
             this.dateTimePickerStartDate.Size = new System.Drawing.Size(163, 22);
             this.dateTimePickerStartDate.TabIndex = 18;
@@ -805,7 +683,7 @@
             // txtEmployeeBrorrowe
             // 
             this.txtEmployeeBrorrowe.Location = new System.Drawing.Point(152, 80);
-            this.txtEmployeeBrorrowe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmployeeBrorrowe.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeBrorrowe.Name = "txtEmployeeBrorrowe";
             this.txtEmployeeBrorrowe.Size = new System.Drawing.Size(372, 22);
             this.txtEmployeeBrorrowe.TabIndex = 16;
@@ -823,7 +701,7 @@
             // txtUserRenter
             // 
             this.txtUserRenter.Location = new System.Drawing.Point(152, 48);
-            this.txtUserRenter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserRenter.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserRenter.Name = "txtUserRenter";
             this.txtUserRenter.Size = new System.Drawing.Size(372, 22);
             this.txtUserRenter.TabIndex = 14;
@@ -841,7 +719,7 @@
             // txtVehicle
             // 
             this.txtVehicle.Location = new System.Drawing.Point(152, 16);
-            this.txtVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVehicle.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehicle.Name = "txtVehicle";
             this.txtVehicle.Size = new System.Drawing.Size(372, 22);
             this.txtVehicle.TabIndex = 12;
@@ -860,86 +738,48 @@
             // 
             this.dataGridViewAllRent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAllRent.Location = new System.Drawing.Point(8, 309);
-            this.dataGridViewAllRent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewAllRent.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewAllRent.Name = "dataGridViewAllRent";
             this.dataGridViewAllRent.RowHeadersWidth = 51;
             this.dataGridViewAllRent.Size = new System.Drawing.Size(624, 295);
             this.dataGridViewAllRent.TabIndex = 10;
             this.dataGridViewAllRent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAllRent_CellContentClick);
             // 
-            // groupBoxFavoriteVehicle
+            // pictureBox1
             // 
-            this.groupBoxFavoriteVehicle.Controls.Add(this.dataGridViewFavoriteVehicle);
-            this.groupBoxFavoriteVehicle.Controls.Add(this.btnRemoveFavoriteVehicle);
-            this.groupBoxFavoriteVehicle.Controls.Add(this.btnSerachFavoriteVehicle);
-            this.groupBoxFavoriteVehicle.Controls.Add(this.txtSerachFavoriteVehicle);
-            this.groupBoxFavoriteVehicle.Controls.Add(this.lblSerachFavoriteVehicle);
-            this.groupBoxFavoriteVehicle.Location = new System.Drawing.Point(16, 535);
-            this.groupBoxFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxFavoriteVehicle.Name = "groupBoxFavoriteVehicle";
-            this.groupBoxFavoriteVehicle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxFavoriteVehicle.Size = new System.Drawing.Size(640, 247);
-            this.groupBoxFavoriteVehicle.TabIndex = 8;
-            this.groupBoxFavoriteVehicle.TabStop = false;
-            this.groupBoxFavoriteVehicle.Text = "User Favorite Vehicles";
+            this.pictureBox1.Image = global::CarRental.Properties.Resources.Car_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(244, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // dataGridViewFavoriteVehicle
+            // pictureBox2
             // 
-            this.dataGridViewFavoriteVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFavoriteVehicle.Location = new System.Drawing.Point(8, 63);
-            this.dataGridViewFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridViewFavoriteVehicle.Name = "dataGridViewFavoriteVehicle";
-            this.dataGridViewFavoriteVehicle.RowHeadersWidth = 51;
-            this.dataGridViewFavoriteVehicle.Size = new System.Drawing.Size(624, 174);
-            this.dataGridViewFavoriteVehicle.TabIndex = 9;
-            this.dataGridViewFavoriteVehicle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFavoriteVehicle_CellContentClick);
+            this.pictureBox2.Image = global::CarRental.Properties.Resources.User_Group_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(259, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
-            // btnRemoveFavoriteVehicle
+            // pictureBox3
             // 
-            this.btnRemoveFavoriteVehicle.Image = global::CarRental.Properties.Resources.Remove_icon;
-            this.btnRemoveFavoriteVehicle.Location = new System.Drawing.Point(587, 15);
-            this.btnRemoveFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRemoveFavoriteVehicle.Name = "btnRemoveFavoriteVehicle";
-            this.btnRemoveFavoriteVehicle.Size = new System.Drawing.Size(45, 41);
-            this.btnRemoveFavoriteVehicle.TabIndex = 8;
-            this.btnRemoveFavoriteVehicle.UseVisualStyleBackColor = true;
-            this.btnRemoveFavoriteVehicle.Click += new System.EventHandler(this.btnRemoveFavoriteVehicle_Click);
-            // 
-            // btnSerachFavoriteVehicle
-            // 
-            this.btnSerachFavoriteVehicle.Location = new System.Drawing.Point(468, 21);
-            this.btnSerachFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSerachFavoriteVehicle.Name = "btnSerachFavoriteVehicle";
-            this.btnSerachFavoriteVehicle.Size = new System.Drawing.Size(100, 28);
-            this.btnSerachFavoriteVehicle.TabIndex = 7;
-            this.btnSerachFavoriteVehicle.Text = "Search";
-            this.btnSerachFavoriteVehicle.UseVisualStyleBackColor = true;
-            this.btnSerachFavoriteVehicle.Click += new System.EventHandler(this.btnSerachFavoriteVehicle_Click);
-            // 
-            // txtSerachFavoriteVehicle
-            // 
-            this.txtSerachFavoriteVehicle.Location = new System.Drawing.Point(87, 23);
-            this.txtSerachFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSerachFavoriteVehicle.Name = "txtSerachFavoriteVehicle";
-            this.txtSerachFavoriteVehicle.Size = new System.Drawing.Size(372, 22);
-            this.txtSerachFavoriteVehicle.TabIndex = 6;
-            // 
-            // lblSerachFavoriteVehicle
-            // 
-            this.lblSerachFavoriteVehicle.AutoSize = true;
-            this.lblSerachFavoriteVehicle.Location = new System.Drawing.Point(20, 27);
-            this.lblSerachFavoriteVehicle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSerachFavoriteVehicle.Name = "lblSerachFavoriteVehicle";
-            this.lblSerachFavoriteVehicle.Size = new System.Drawing.Size(53, 16);
-            this.lblSerachFavoriteVehicle.TabIndex = 5;
-            this.lblSerachFavoriteVehicle.Text = "Search:";
+            this.pictureBox3.Image = global::CarRental.Properties.Resources.Office_Customer_Male_Light_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(250, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1312, 814);
-            this.Controls.Add(this.groupBoxFavoriteVehicle);
             this.Controls.Add(this.groupBoxRentVehicle);
             this.Controls.Add(this.groupBoxAllVehicles);
             this.Controls.Add(this.groupBoxEmployeeInfo);
@@ -950,7 +790,7 @@
             this.Controls.Add(this.menuStripMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStripMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -974,9 +814,9 @@
             this.groupBoxRentVehicle.ResumeLayout(false);
             this.groupBoxRentVehicle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllRent)).EndInit();
-            this.groupBoxFavoriteVehicle.ResumeLayout(false);
-            this.groupBoxFavoriteVehicle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFavoriteVehicle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1008,17 +848,10 @@
         private System.Windows.Forms.GroupBox groupBoxEmployeeInfo;
         private System.Windows.Forms.GroupBox groupBoxAllVehicles;
         private System.Windows.Forms.GroupBox groupBoxRentVehicle;
-        private System.Windows.Forms.GroupBox groupBoxFavoriteVehicle;
-        private System.Windows.Forms.Button btnAddToFavoriteVehicle;
         private System.Windows.Forms.Button btnSearchAllVehicles;
         private System.Windows.Forms.TextBox txtSearchAllVehicles;
         private System.Windows.Forms.Label lblSearchAllVehicles;
         private System.Windows.Forms.DataGridView dataGridViewAllVehicles;
-        private System.Windows.Forms.DataGridView dataGridViewFavoriteVehicle;
-        private System.Windows.Forms.Button btnRemoveFavoriteVehicle;
-        private System.Windows.Forms.Button btnSerachFavoriteVehicle;
-        private System.Windows.Forms.TextBox txtSerachFavoriteVehicle;
-        private System.Windows.Forms.Label lblSerachFavoriteVehicle;
         private System.Windows.Forms.DataGridView dataGridViewAllRent;
         private System.Windows.Forms.TextBox txtEmployeeBrorrowe;
         private System.Windows.Forms.Label lblEmployeeBrorrowe;
@@ -1043,25 +876,19 @@
         private System.Windows.Forms.Label lblAllVehicleNo;
         private System.Windows.Forms.Label lblAllVehicle;
         private System.Windows.Forms.Button btnRefreshVevicleInfo;
-        private System.Windows.Forms.Label lblTodayRentNo;
-        private System.Windows.Forms.Label lblTodayRent;
         private System.Windows.Forms.Label lblAllRentNo;
         private System.Windows.Forms.Label lblAllRent;
-        private System.Windows.Forms.Button btnRefreshRentInfo;
-        private System.Windows.Forms.Label lblRentUserNo;
-        private System.Windows.Forms.Label lblRentUser;
         private System.Windows.Forms.Label lblAllUserNo;
         private System.Windows.Forms.Label lblAllUser;
-        private System.Windows.Forms.Button btnRefreshUserInfo;
-        private System.Windows.Forms.Label lblActiveEmployeeNo;
-        private System.Windows.Forms.Label lblActiveEmployee;
         private System.Windows.Forms.Label lblAllEmployeeNo;
         private System.Windows.Forms.Label lblAllEmployee;
-        private System.Windows.Forms.Button btnRefreshEmployeeInfo;
         private System.Windows.Forms.ToolStripMenuItem mnuManageVehicleType;
         private System.Windows.Forms.Button btnVehicleComment;
         private System.Windows.Forms.TextBox txtVehicleComment;
         private System.Windows.Forms.Label lblVehicleComment;
         private System.Windows.Forms.ToolStripMenuItem mnuAboutTeam;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

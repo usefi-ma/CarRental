@@ -58,8 +58,6 @@
             this.lblCountItemNo = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.lblImageList = new System.Windows.Forms.Label();
-            this.btnDeleteImage = new System.Windows.Forms.Button();
-            this.btnAddImage = new System.Windows.Forms.Button();
             this.listViewComments = new System.Windows.Forms.ListView();
             this.dataGridViewMain = new System.Windows.Forms.DataGridView();
             this.listViewImages = new System.Windows.Forms.ListView();
@@ -379,28 +377,6 @@
             this.lblImageList.TabIndex = 6;
             this.lblImageList.Text = "Vehicle image list:";
             // 
-            // btnDeleteImage
-            // 
-            this.btnDeleteImage.Image = global::CarRental.Properties.Resources.Trash_can_icon;
-            this.btnDeleteImage.Location = new System.Drawing.Point(980, 34);
-            this.btnDeleteImage.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDeleteImage.Name = "btnDeleteImage";
-            this.btnDeleteImage.Size = new System.Drawing.Size(45, 41);
-            this.btnDeleteImage.TabIndex = 7;
-            this.btnDeleteImage.UseVisualStyleBackColor = true;
-            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
-            // 
-            // btnAddImage
-            // 
-            this.btnAddImage.Image = global::CarRental.Properties.Resources.camera_icon;
-            this.btnAddImage.Location = new System.Drawing.Point(820, 34);
-            this.btnAddImage.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(45, 41);
-            this.btnAddImage.TabIndex = 8;
-            this.btnAddImage.UseVisualStyleBackColor = true;
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
-            // 
             // listViewComments
             // 
             this.listViewComments.HideSelection = false;
@@ -426,10 +402,10 @@
             // listViewImages
             // 
             this.listViewImages.HideSelection = false;
-            this.listViewImages.Location = new System.Drawing.Point(824, 82);
+            this.listViewImages.Location = new System.Drawing.Point(824, 35);
             this.listViewImages.Margin = new System.Windows.Forms.Padding(4);
             this.listViewImages.Name = "listViewImages";
-            this.listViewImages.Size = new System.Drawing.Size(204, 171);
+            this.listViewImages.Size = new System.Drawing.Size(204, 218);
             this.listViewImages.TabIndex = 11;
             this.listViewImages.UseCompatibleStateImageBehavior = false;
             this.listViewImages.View = System.Windows.Forms.View.List;
@@ -443,8 +419,6 @@
             this.Controls.Add(this.listViewImages);
             this.Controls.Add(this.dataGridViewMain);
             this.Controls.Add(this.listViewComments);
-            this.Controls.Add(this.btnAddImage);
-            this.Controls.Add(this.btnDeleteImage);
             this.Controls.Add(this.lblImageList);
             this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.statusStripMain);
@@ -485,8 +459,6 @@
         private System.Windows.Forms.Label lblBrand;
         private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.Label lblImageList;
-        private System.Windows.Forms.Button btnDeleteImage;
-        private System.Windows.Forms.Button btnAddImage;
         private System.Windows.Forms.ComboBox comboBoxIsRented;
         private System.Windows.Forms.Label lblIsRented;
         private System.Windows.Forms.TextBox txtPrice;

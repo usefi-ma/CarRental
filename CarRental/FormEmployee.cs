@@ -24,8 +24,23 @@ namespace CarRental
         {
             try
             {
+
+
+
+
                 SearchData();
                 LoadUsers();
+
+
+                //populating Employee combo box
+                string EmployeeQueryString = "SELECT * FROM Employee INNER JOIN [User] ON Employee.UserID=[User].UserId;";
+                DataTable EdtData = dbManager.SelectData(EmployeeQueryString);
+
+                comboBoxUser.DataSource = EdtData;
+                comboBoxUser.DisplayMember = "FirstName";
+                comboBoxUser.ValueMember = "EmployeeID";
+
+
             }
             catch (Exception ex)
             {

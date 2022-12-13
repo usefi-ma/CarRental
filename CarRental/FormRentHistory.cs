@@ -46,6 +46,7 @@ namespace CarRental
                 comboBoxEmployee.DataSource = EdtData;
                 comboBoxEmployee.DisplayMember = "FirstName";
                 comboBoxEmployee.ValueMember = "EmployeeID";
+
                 //populating Vehicle combo box
                 string VehicleQueryString = "Select VehicleID,Brand FROM Vehicle";
                 DataTable VdtData = dbManager.SelectData(VehicleQueryString);
@@ -111,8 +112,8 @@ namespace CarRental
             if (dateTimePickerStartDate.Text.Trim() != string.Empty || dateTimePickerEndDate.Text.Trim() != string.Empty ||
                 comboBoxUser.SelectedIndex > -1 || comboBoxVehicle.SelectedIndex > -1 || comboBoxEmployee.SelectedIndex > -1)
             {
-                //string queryString = "select * from Renting where UserID like %" + UserID + "% and EmpID like %" + EmpID + "% and VehicleID %" + VehicleID + "% and StartDate>=" + StartDate + " and EndDate<=" + EndDate + "";
-                string queryString = "select * from Renting where StartDate>='" + StartDate + "' and EndDate<='" + EndDate + "'";
+                string queryString = "SELECT RentingID,Vehicle.Brand as Brand,[User].FirstName as [User],\r\n(SELECT [User].FirstName FROM Employee INNER JOIN [User] ON Employee.UserID=[User].UserId where Employee.EmployeeID=Renting.EmpID) as Employee,StartDate,EndDate,DailyCost,RequestDate \r\nFROM Renting INNER JOIN [User] ON Renting.UserID=[User].UserId\r\nINNER JOIN Vehicle ON Renting.VehicleID=Vehicle.VehicleID\r\nINNER JOIN Employee ON Renting.EmpID=Employee.EmployeeID where StartDate>='" + StartDate + "' and EndDate<='" + EndDate + "'";
+
                 DataTable dtData = dbManager.SelectData(queryString);
                 dataGridViewMain.DataSource = dtData;
             }
